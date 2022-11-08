@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-image: url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+        background-position: cover;
+        color: black;
+      }
+
+      main {
+        width: 100%;
+        height: 80vh;
+        margin: 8px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #time {
+        font-size: 80px;
+        font-weight: bold;
+      }
+
+      .greeting {
+        font-size: 50px;
+      }
+
+      .todo {
+        font-size: 30px;
+      }
+
+      #author {
+        font-size: 25px;
+        font-style: italic;
+      }
+
+      .quote {
+        width: 100%;
+        height: 20vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <main>
+      <div id="time">12:00</div>
+      <div class="greeting">Hello, Woong!</div>
+      <div class="todo">취업하기!!</div>
+
+      <div class="quote">
+        <div id="author">- 명언의 저자 -</div>
+        <div id="content">- 명언의 내용 -</div>
+      </div>
+    </main>
+  </body>
+</html>
